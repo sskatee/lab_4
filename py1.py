@@ -27,6 +27,7 @@ def dfs(graph, start, visited=None):
             dfs(graph, neighbor, visited)
 
 dfs(graph, "A")
+print('----------------------')
 
 def bfs(graph, start):
     visited = set()
@@ -41,5 +42,6 @@ def bfs(graph, start):
                     queue.append(neighbor)
 
 bfs(graph, "A")
+
 
 
